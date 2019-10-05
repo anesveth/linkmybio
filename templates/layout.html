@@ -162,11 +162,13 @@
             {% for socialmedia in links%}
             {% for socialmedianame,info in socialmedia.items()%}
             {%if info['enable']==True%}
+            {%if info['until'] > date%}
                 <div class="bounceIn">
                     <button onclick="location.href='{{info['link']}}'"  class="button button2" style="font-family: 'Special Elite', cursive;">
                         {{info['description']}}
                     </button> 
                 </div> 
+            {%endif%}
             {%endif%}
             {%endfor%}
             {%endfor%}

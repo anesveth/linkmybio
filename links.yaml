@@ -16,28 +16,35 @@ links:
     - instagram:
         enable: True
         link: "https://www.instagram.com/aveth.maatens/"
-        description: "my instagram (^‿^✿)"
+        description: "follow my instagram (^‿^✿)"
+        until: "2019/12/30 20:30:00"
     - blog:
         enable: True
         link: "https://anesse02.tumblr.com/"
         description: "check out my blog ♡✧( ु•⌄• )"
+        until: "2019-12-30 20:30:00"
     - github:
         enable: True
         link: https://github.com/anesveth"
         description: "my github page (＾ω＾)" 
+        until: "2019-12-30 20:30:00"
     - snapchat:
         enable: True
         link: "https://www.snapchat.com/add/abeth_maats"
         description: "add me on snapchat（＾＿−）"
+        until: "2019-12-30 20:30:00"
     - pinterest:
         enable: True
         link: "https://www.pinterest.com/annesveth13/"
         description: "my pinterest ヽ(〃･ω･)ﾉ"
+        until: "2019-12-30 20:30:00"
     - youtube:
         enable: True
         link: "https://www.youtube.com/channel/UCI1iZ7h5batrPKOFafIm46Q"
         description: "homework youtube channel"
+        until: "2019-12-30 20:30:00"
     - spotify:
         enable: True
         link: "https://open.spotify.com/playlist/6yc9XvKLYEffxiV1bSGqrd?si=9x_XnDM0RT2RvrZVzakR5g"
         description: 'focus study playlist'
+        until: "2019-09-04 20:30:00"
