@@ -12,7 +12,7 @@ def openyml(filename):
 def home():
     filename='links.yaml'
     data=openyml(filename)
-    links={}
+    links=[]
     for k,v in data.items():
         if k=='picture':
             picture=v

@@ -1,10 +1,10 @@
 # point to your own profile pic you want to display in your link.my.bio
-picture: "static/facepic.jpeg"
+picture: "static/facepic.jpg"
 
 # it will appear just below your picture.
 name: "Sharon Anesveth Alvarado Maatens"
 # short auto biography about yourself
-shortbio: "17 "
+shortbio: "17 // CS student at UFM // I ❤ youtube, listening to music & scary movies."
 
 # 'links' will be an array of any amount of links you want your followers to discover, notice that the name will be mere descriptive (it is not necesarily functional.)
 # each link will have 3 attributes:
@@ -15,25 +15,29 @@ shortbio: "17 "
 links:
     - instagram:
         enable: True
-        link: "https://url_to_your.instagram.profile"
-        description: "How Cool my photos are in instagram :camera:"
+        link: "https://www.instagram.com/aveth.maatens/"
+        description: "my instagram (^‿^✿)"
     - blog:
-        enable: False
-        link: "lorem ipsum"
-        description: "lorem ipsum dorem"
+        enable: True
+        link: "https://anesse02.tumblr.com/"
+        description: "check out my blog ♡✧( ु•⌄• )"
     - github:
-        enable: False
-        link: "http://etc.etc"
-        description: "any other link you want your followers to see"
-    - pinterest:
-        enable: False
-        link: "http://etc.etc"
-        description: "any other link you want your followers to see"
+        enable: True
+        link: https://github.com/anesveth"
+        description: "my github page (＾ω＾)" 
     - snapchat:
-        enable: False
-        link: "http://etc.etc"
-        description: "any other link you want your followers to see"
+        enable: True
+        link: "https://www.snapchat.com/add/abeth_maats"
+        description: "add me on snapchat（＾＿−）"
     - pinterest:
-        enable: False
-        link: "http://etc.etc"
-        description: "any other link you want your followers to see"
+        enable: True
+        link: "https://www.pinterest.com/annesveth13/"
+        description: "my pinterest ヽ(〃･ω･)ﾉ"
+    - youtube:
+        enable: True
+        link: "https://www.youtube.com/channel/UCI1iZ7h5batrPKOFafIm46Q"
+        description: "homework youtube channel"
+    - spotify:
+        enable: True
+        link: "https://open.spotify.com/playlist/6yc9XvKLYEffxiV1bSGqrd?si=9x_XnDM0RT2RvrZVzakR5g"
+        description: 'focus study playlist'

@@ -12,22 +12,25 @@
     <style>
         /* ///////////////////////////////////////////// -------    BUTTONS  */
         .button {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
+        background-color: rgb(253, 199, 254); /* Green */
+        border: 3px solid rgb(255, 255, 255); /* Green */
+        color: black;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
+        margin: 9px 2px;
         cursor: pointer;
         -webkit-transition-duration: 0.4s; /* Safari */
         transition-duration: 0.4s;
+        border-radius: 12px;
+        width: 300px;
         }
 
         .button2:hover {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        width: 330px;
         }
         @charset "UTF-8";
 
@@ -126,22 +129,49 @@
         }
     /* ///////////////////////////////////////////// -------    BACKGROUND  */
     body {
-        background-image: url("https://66.media.tumblr.com/4f4cb189cf1f5f1dd0ff6d21997f33d4/tumblr_inline_n39n36Mtwz1rpts2p.gif");
+        background-image: url("https://66.media.tumblr.com/07008339d680132591fdaba6bb28c457/tumblr_inline_n5br6fUeZK1r4ugnn.png");
         background-repeat:  repeat;
         /* no-repeat, */
         background-color: #cccccc;
         }
+    img {
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+    }
+    h1 {
+    font-size: 50px;
+    }
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Special+Elite&display=swap" rel="stylesheet">
     </head>
     <body>
             <div class="text-center">
-                    {%if picture is defined%}
-                    <img src='{{picture}}' class="bounceIn" alt="Transparent MDB Logo" id="animated-img1">
-                    {%endif%}
+                {%if picture is defined%}
+                <br>
+                <img src='{{picture}}' width="200" height="200" class="bounceIn" alt="Transparent MDB Logo" id="animated-img1">
+                {%endif%}
             </div>
-            <div class="bounceIn">
-                <button class="button button2">Shadow on Hover</button>   
-            </div>   
+            <div class="text-center">
+                <br>
+                <div class="bounceIn">
+                <h1 style="font-family: 'Amatic SC', cursive;">{{name}}</h1>
+                <p style="font-family: 'Special Elite', cursive;">{{shortbio}}</p>
+                </div>
+            </div>
+            <div class="text-center">
+            {% for socialmedia in links%}
+            {% for socialmedianame,info in socialmedia.items()%}
+            {%if info['enable']==True%}
+                <div class="bounceIn">
+                    <button onclick="location.href='{{info['link']}}'"  class="button button2" style="font-family: 'Special Elite', cursive;">
+                        {{info['description']}}
+                    </button> 
+                </div> 
+            {%endif%}
+            {%endfor%}
+            {%endfor%}
+
+            </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
