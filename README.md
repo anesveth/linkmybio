@@ -89,7 +89,8 @@ See you can add any style to your own project. These are only ideas.
 
 
 # Usage
-
+<!-- //first open the folder this proyect is in -->
+> pip install -r requirements.txt
 > python3 bio.py
 
 
